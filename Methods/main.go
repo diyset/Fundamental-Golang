@@ -15,6 +15,7 @@ func main() {
 
  person.ChangeName("Michael Jordan")
  fmt.Println(person.GetName())
+
 }
 
 type Person struct {
@@ -23,6 +24,7 @@ type Person struct {
 	Age int
 	Job string
 }
+//Function pointer untuk mengganti nama
 func (p *Person) ChangeName(newName string){
 	p.Name = newName
 }
